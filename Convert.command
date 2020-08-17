@@ -66,6 +66,7 @@ def main():
     while True:
         i = grab("What to convert? (h=hex, a=ascii, b=base64, d=decimal, s=hexswap [from_type(optional for hexswap) to_type value]):  ")
         if i.lower() == "q":
+            cls()
             exit()
         i = shlex.split(i)
         print("")
